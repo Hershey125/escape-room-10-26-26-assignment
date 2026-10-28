@@ -1,9 +1,19 @@
+#ifndef PLAYER_H
+#define PLAYER_H
 
 
-
+class Room;
 class Player{
-    private:
 
+
+    private:
+    int x;
+    int y;
+    
     public:
-        bool move(char key, Room* room);
+    Player();
+    ~Player();
+        bool move(char direction, Room* room);
 };
+
+#endif
